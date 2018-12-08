@@ -7,8 +7,7 @@ import stores from './stores'
 import history from './history'
 
 import Menu from './components/Menu'
-import SectionOne from './components/SectionOne'
-import SectionTwo from './components/SectionTwo'
+import RootSection from './components/RootSection'
 
 class App extends React.Component {
   public render() {
@@ -20,8 +19,10 @@ class App extends React.Component {
               <Menu />
             </header>
             <main className='App-main'>
-              <Route path='/section-1' component={SectionOne} />
-              <Route path='/section-2' component={SectionTwo} />
+              <Route
+                path='/'
+                component={RootSection}
+              />
             </main>
           </div>
         </Provider>

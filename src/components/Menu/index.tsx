@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 
+import './style.scss'
+
 class Menu extends React.Component {
   render() {
     return (

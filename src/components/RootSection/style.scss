@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  list-style: none;
+
+  &__item {
+    margin-bottom: 15px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: #222;
+    text-decoration: none;
+
+    &.active, &:hover {
+      text-decoration: underline;
+    }
+  }
+}

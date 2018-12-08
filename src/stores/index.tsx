@@ -1,9 +1,7 @@
-import BasicStore from './BasicStore'
+import List from './List'
 
-const stores = {}
-
-Object.assign(stores, {
-  basicStore: new BasicStore(stores),
-})
+const stores = {
+  list: new List(),
+}
 
 export default stores
